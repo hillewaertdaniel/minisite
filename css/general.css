@@ -1,0 +1,64 @@
+/*
+Projet: MINISITE
+JUIN 2017
+HILLEWAERT Daniel
+*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    color: #000;
+    font-family: Helvetica, Verdana, sans-serif;
+    background-image: url("../img/bcg.jpg");
+}
+
+main{
+    max-width: 1160px;
+    margin: auto;
+}
+
+ul, li{
+    display: inline-block;
+}
+li{
+    background-color: #E4EEA8; /*A EFFACER*/
+}
+/*  -----NAV-----  */
+nav{
+    margin-bottom: 10px;
+    background-color: #E4ECA8; /*A EFFACER*/
+}
+nav div[class^="nav"]{
+    width: 30px;
+    margin: 10px;
+    height: 30px;
+    display: inline-block;
+
+
+    background-color: #AF9ECA; /*A EFFACER*/
+}
+
+/*  -----HEADER-----  */
+header{
+    background-color: #9ECAAB; /*A EFFACER*/
+}
+
+/*  -----SECTION-----  */
+section{
+    background-color: #9ECAAB; /*A EFFACER*/
+}
+
+/*-------  Ecran TABLETTE -------*/
+@media only screen and (min-width: 400px ){
+    header{
+    background-color: #FECAAB; /*A EFFACER*/
+    }
+}
+
+/*-------  Ecran BUREAU -------*/
+@media only screen and (min-width: 700px ){
+    header{
+    background-color: #FECACB; /*A EFFACER*/
+    }
+}
