@@ -8,67 +8,87 @@ html{
 }
 body{
     font-size: 1.6rem;
-    color: #000;
+    color: #323232;
     font-family: Helvetica, Verdana, sans-serif;
     background-image: url("../img/bcg.jpg");
+    padding: 10px;
 }
 
-main{
-    max-width: 1160px;
-    margin: auto;
-}
-
-ul, li{
-    display: inline-block;
-}
-li{
-    background-color: #E4EEA8; /*A EFFACER*/
-}
-/*  -----NAV-----  */
-nav{
-    margin-bottom: 10px;
-    background-color: #E4ECA8; /*A EFFACER*/
-}
-nav div[class^="nav"]{
+/*  -----NAV-----      [class^="nav"]  */
+nav div{
+    margin: 5px;
     width: 30px;
-    margin: 10px;
     height: 30px;
     display: inline-block;
-
-
     background-color: #AF9ECA; /*A EFFACER*/
 }
 
 /*  -----HEADER-----  */
 header{
-    background-color: #9ECAAB; /*A EFFACER*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
 }
+
 .logo_img{
-    
+    margin: 5px;
+    background-color: #FFF;
+    width: 100%;
+    text-align: center;
 }
+
 .logo_txt{
-    
+    margin: 5px;
+    display: flex;
+    width: 100%; 
+    flex-direction: column;
+    background-color: #FFF;
+    color: #323232;
+    text-align: center;
+    line-height: 0.8;
+
 }
-header ul{
-    
+.txt_nom{
+    display: block;
+    margin-top: auto;
+    font-size: 3.5rem;
 }
+.txt_fonction{
+    display: block;
+    margin-bottom: auto;
+    font-size: 1.5rem;
+}
+
+
+header a{
+    display: block;
+    margin: 5px;
+    width: 100%;
+    background-color: #C0AE7F;
+}
+
 
 
 /*  -----SECTION-----  */
-section{
-    background-color: #9ECAAB; /*A EFFACER*/
+
+.sec{
+    margin: 5px;
 }
 
 /*-------  Ecran TABLETTE -------*/
 @media only screen and (min-width: 400px ){
     header{
-    background-color: #FECAAB; /*A EFFACER*/
     }
 }
 
 /*-------  Ecran BUREAU -------*/
 @media only screen and (min-width: 700px ){
+    main{
+        max-width: 1160px;
+        margin: auto;
+    }
+
     header{
-    background-color: #FECACB; /*A EFFACER*/
     }
 }

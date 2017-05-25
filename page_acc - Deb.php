@@ -16,10 +16,10 @@ HILLEWAERT Daniel
     <body>
         <main>
             <nav>
-                <div class="nav">A</div>
-                <div class="nav">B</div>
-                <div class="nav">C</div>
-                <div class="nav">D</div>
+                <div class="nav_1">A</div>
+                <div class="nav_2">B</div>
+                <div class="nav_3">C</div>
+                <div class="nav_4">D</div>
             </nav>
             <header>
                 <div class="logo_img"><img src="img/logoA.png" alt="logo"/></div>
@@ -34,9 +34,7 @@ HILLEWAERT Daniel
                 <div>D</div>
             </header>
             <section>
-                <div class="sec">Box 1</div>
-                <div class="sec">Box 2</div>
-                <div class="sec">Box 3</div>
+                Section
             </section>
         </main>
     </body>
