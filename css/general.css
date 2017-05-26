@@ -16,11 +16,31 @@ body{
 
 /*  -----NAV-----      [class^="nav"]  */
 nav div{
+    position: relative;
     margin: 5px;
     width: 30px;
     height: 30px;
     display: inline-block;
-    background-color: #AF9ECA; /*A EFFACER*/
+    overflow: hidden;
+}
+nav img{
+    position: absolute;
+    top: 0;
+    transition-property: top;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+nav img:hover{
+    top: -30px;
+}
+
+
+nav a{
+/*    display: block;
+    padding: 5px 15px;
+    color: black;
+    background-color: #C0AE7F;
+    text-decoration: none;*/
 }
 
 /*  -----HEADER-----  */
@@ -33,6 +53,8 @@ header{
 
 .logo_img{
     margin: 5px;
+    margin-bottom: 0;
+    padding: 10px;
     background-color: #FFF;
     width: 100%;
     text-align: center;
@@ -40,6 +62,8 @@ header{
 
 .logo_txt{
     margin: 5px;
+    margin-top: 0;
+    padding: 10px;
     display: flex;
     width: 100%; 
     flex-direction: column;
@@ -60,20 +84,74 @@ header{
     font-size: 1.5rem;
 }
 
-
-header a{
-    display: block;
-    margin: 5px;
+.lien{
     width: 100%;
-    background-color: #C0AE7F;
+    margin: 5px;
+}
+header a{
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 3px 15px;
+    color: black;
+    background-color: #FFF;
+    text-decoration: none;
 }
 
 
 
 /*  -----SECTION-----  */
 
-.sec{
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec_img{
+    /*?????????? robot google si texte dans hidden?*/
+    display: none;
     margin: 5px;
+    
+    /*??????????????*/
+    background-color: #FFF;
+    width: 100%;
+}
+.sec_descr{
+    margin: 5px;
+    color: white;
+    background-color: #00AEEF;
+    width: 100%;
+}
+
+/*   H1 pour le referencement   */
+.sec_descr h1{
+    margin: 0;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: lighter;
+    background-color: #20BFFA;
+}
+.sec_descr_suite{
+    margin: 10px;
+}
+
+.sec_infos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.infos{
+    margin: 5px;
+    background-color: #00AEEF;
+    width: 100%;
+}
+section img{
+    width: 100%;
+    max-width: 100%;
+}
+.info_type{
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.8rem;
+    background-color: #CD5604;
 }
 
 /*-------  Ecran TABLETTE -------*/
