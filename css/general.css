@@ -3,9 +3,14 @@ Projet: MINISITE
 JUIN 2017
 HILLEWAERT Daniel
 */
+
+/*  A faire: DéPLACER LES Transitions!!!!!  */
+
+/*    BALISES GENERALES    */
 html{
     font-size: 62.5%;
 }
+
 body{
     font-size: 1.6rem;
     color: #323232;
@@ -52,7 +57,6 @@ header{
 }
 
 .logo_img{
-    order: 1;
     margin: 5px;
     margin-bottom: 0;
     padding: 10px;
@@ -62,7 +66,6 @@ header{
 }
 
 .logo_txt{
-    order: 2;
     margin: 5px;
     margin-top: 0;
     padding: 10px;
@@ -73,8 +76,8 @@ header{
     color: #323232;
     text-align: center;
     line-height: 0.8;
-
 }
+
 .txt_nom{
     display: block;
     margin-top: auto;
@@ -85,16 +88,19 @@ header{
     margin-bottom: auto;
     font-size: 1.5rem;
 }
-/*.box_liens{
-    order: 3;
-}*/
 
-  /*???????? order sur plusieurs éléments*/
-.lien{
-    order: 3;
+[class^="lien-"]{
     width: 100%;
     margin: 5px;
+    /*background-color: #FFF;*/
 }
+.lien a:hover{
+    background-color: #94DFFA;
+}
+[class^="lien_bis"]{
+    display: none;
+}
+
 header a{
     display: inline-block;
     font-size: 1.2rem;
@@ -113,12 +119,11 @@ section{
     flex-wrap: wrap;
 }
 .sec_img{
-    /*?????????? robot google si texte dans hidden?*/
     display: none;
     margin: 5px;
     
     /*??????????????*/
-    background-color: #FFF;
+    background-color: #FF0;
     width: 100%;
 }
 .sec_descr{
@@ -151,10 +156,11 @@ section img{
 }
 .infos{
     margin: 5px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #FFF;
     background-color: #00AEEF;
     width: 100%;
+    height: auto;
 }
 .infos:hover{
     background-color: #20BFFA;
@@ -162,24 +168,93 @@ section img{
 .info_B{
     display: inline-block;
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     background-color: #20BFFA;
+    height: auto;
 }
 
 /*-------  Ecran TABLETTE -------*/
-@media only screen and (min-width: 400px ){
-    header{
+@media only screen and (min-width: 650px ){
+    /* HEADER */
+    .logo_img{
+        margin-bottom: 5px;
+        margin-right: 0;
+        width: 25%;
+        flex: 1 1 auto;
+    }
+
+    .logo_txt{
+        margin-top: 5px;
+        margin-left: 0;
+        width: 25%; 
+        flex: 1 1 auto;
+    }
+    
+    [class^="lien-"]{
+        width: 30%;
+        margin: 5px;
+        flex: 1 1 auto;
+    }
+    a{
+        margin: 0;
+    }
+    .lien_bis_img_1{
+        background-color: #00AEEF;
+    }
+    .lien_bis_img_2{
+        background-color: #71AA00;
+    }
+    .lien_bis_img_3{
+        background-color: #F3A231;
+    }
+    .lien_bis_img_4{
+        background-color: #404040;
+    }
+
+    .lien_bis_txt_1{
+        background-color: #00A1DD; 
+    }
+    .lien_bis_txt_2{
+        background-color: #659800; 
+    }
+    .lien_bis_txt_3{
+        background-color: #E19323; 
+    }
+    .lien_bis_txt_4{
+        background-color: #303030; 
+    }
+    
+[class^="lien_bis"]{
+    display: block;
+}
+
+   
+    header a{
+    width: 100%
+    }
+
+
+    /* SECTION */
+    .sec_descr{
+        width: 45%;
+        flex: 1 1 auto;
+    }
+    .sec_infos{
+        width: 45%;
+        flex: 1 1 auto;
     }
 }
 
 /*-------  Ecran BUREAU -------*/
-@media only screen and (min-width: 700px ){
+@media only screen and (min-width: 900px ){
     main{
         max-width: 1160px;
         margin: auto;
     }
-
-    header{
+    /* SECTION */
+    .sec_img{
+    display: block;
     }
+
 }
