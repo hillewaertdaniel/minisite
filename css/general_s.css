@@ -7,6 +7,11 @@ HILLEWAERT Daniel
 /*  A faire: DéPLACER LES Transitions!!!!!  */
 
 /*    BALISES GENERALES    */
+.bloc_end{
+    background-color: #94DFFA;
+    margin: 5px;
+    padding: 15px;
+}
 html{
     font-size: 62.5%;
 }
@@ -82,6 +87,7 @@ header{
     width: 100%;
     margin: 5px;
     background-color: #FF9;
+    justify-content: center;
 }
 .lien a:hover{
     background-color: #94DFFA;
@@ -164,7 +170,7 @@ section img{
 }
 
 /*-------  Ecran TABLETTE -------*/
-@media only screen and (min-width: 650px ){
+@media only screen and (min-width: 600px ){
     /* NAV */
     nav img{
         transition-property: top;
@@ -176,6 +182,9 @@ section img{
     }
 
     /* HEADER */
+/*    header nav{
+        background-color: #71AA00;
+    }*/
     .logo_img{
         margin-bottom: 5px;
         margin-right: 0;
