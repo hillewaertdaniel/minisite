@@ -16,8 +16,6 @@ nav_meanmenu{
     background-color: #94DFFA;
     margin: 5px;
     padding: 10px;
-    height: 100%;
-    /*box-sizing: border-box;*/
 }
 
 html{
@@ -35,7 +33,7 @@ body{
 
 [class^="bloc"]{
     /*Pour eviter le débordement des marges*/
-    padding: 1px;
+    /*padding: 1px;*/
 }
 /*  -----NAV-----  */
 nav div{
