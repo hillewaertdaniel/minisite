@@ -1,0 +1,136 @@
+/*
+Projet: MINISITE
+JUIN 2017
+HILLEWAERT Daniel
+*/
+
+/*  A faire: DéPLACER LES Transitions!!!!!  */
+
+/*  -----BALISES GENERALES-----  */
+nav_meanmenu{
+    background-color: blueviolet;
+    display: none;
+}
+
+._end{                           /* A supprimer */
+    background-color: #94DFFA;
+    margin: 5px;
+    padding: 10px;
+    height: 100%;
+    /*box-sizing: border-box;*/
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    color: #323232;
+    font-family: Helvetica, Verdana, sans-serif;
+    background-image: url("../img/bcg.jpg");
+    background-color: #607472;
+    padding: 10px;
+}
+
+[class^="bloc"]{
+    /*Pour eviter le débordement des marges*/
+    padding: 1px;
+}
+/*  -----NAV-----  */
+nav div{
+    position: relative;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+}
+nav img{
+    position: absolute;
+    top: 0;
+}
+
+/*  -----HEADER-----  */
+[class^="bloc_hd__"]{
+    display: none;
+}
+
+/*  -----SECTION-----  */
+.bloc_pg_1_A{
+    display: none;
+}
+
+
+
+/*  --===--  Ecran TABLETTE --===--  */
+@media only screen and (min-width: 500px ){
+
+    /*  -----MeanMenu-----  */
+    body main article ul{
+        display: none;
+    }
+
+    /*  -----BALISES GENERALES-----  */
+
+    /*  -----NAV-----  */
+    nav img{
+        top: -30px;
+        transition-property: top;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+    }
+    nav img:hover{
+        top: 0;
+    }
+
+    /*  -----HEADER-----  */
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bloc_hd_1{
+        flex: 2 1 60%;
+    }
+    [class^="bloc_hd__"]{
+        display: block;
+        flex: 1 2 30%;
+    }
+
+    /*  -----SECTION-----  */
+
+}
+
+/*  --===--  Ecran BUREAU --===--  */
+@media only screen and (min-width: 900px ){
+
+/*  -----BALISES GENERALES-----  */
+
+/*  -----MAIN-----  */
+    main{
+        max-width: 1160px;
+        margin: auto;
+    }
+    /* SECTION */
+    .sec_img{
+    display: block;
+    }
+
+/*  -----NAV-----  */
+    nav img{
+        transition-property: top;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+    }
+    nav img:hover{
+        top: 0;
+    }
+
+/*  -----HEADER-----  */
+
+/*  -----SECTION-----  */
+.bloc_pg_1_A{
+    display: block;
+}
+
+}

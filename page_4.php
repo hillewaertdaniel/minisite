@@ -1,9 +1,9 @@
 <?php
-    include("haut_pg.php");
+    include("pg_haut.php");
 ?>
-    <div class="bloc_pg4_A"><div class="bloc_end">A</div></div>
-    <div class="bloc_pg4_B"><div class="bloc_end">B</div></div>
-    <div class="bloc_pg4_C"><div class="bloc_end">C</div></div>
+    <div class="bloc_pg_4_A"><div class="_end">bloc_pg_4_A</div></div>
+    <div class="bloc_pg_4_B"><div class="_end">bloc_pg_4_B</div></div>
+    <div class="bloc_pg_4_C"><div class="_end">bloc_pg_4_C</div></div>
 <?php
-    include("bas_pg.php");
+    include("pg_bas.php");
 ?>

@@ -4,7 +4,7 @@
     <script src="jquery.meanmenu.js"></script>
     <script>
 	jQuery(document).ready(function () {
-	    jQuery('main header nav').meanmenu();
+	    jQuery('body main article').meanmenu();
 	});
     </script>
     </body>
