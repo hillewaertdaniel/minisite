@@ -4,18 +4,24 @@ JUIN 2017
 HILLEWAERT Daniel
 */
 
-/*  A faire: DéPLACER LES Transitions!!!!!  */
+.test_background{
+    margin: 100px;
+    padding: 100px;
+    background-color: #FFF;
+    border: 20px solid rgba(255, 255, 255, 0.3);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
 
 /*  -----BALISES GENERALES-----  */
 nav_meanmenu{
-    background-color: blueviolet;
     display: none;
 }
 
 ._end{                           /* A supprimer */
     background-color: #94DFFA;
-    margin: 5px;
     padding: 10px;
+    /*margin: 5px;*/
 }
 
 html{
@@ -27,14 +33,15 @@ body{
     color: #323232;
     font-family: Helvetica, Verdana, sans-serif;
     background-image: url("../img/bcg.jpg");
+    background-size: 100% auto;
     background-color: #607472;
     padding: 10px;
 }
 
 [class^="bloc"]{
-    /*Pour eviter le débordement des marges*/
-    /*padding: 1px;*/
+    margin: 5px;
 }
+
 /*  -----NAV-----  */
 nav div{
     position: relative;
@@ -50,11 +57,36 @@ nav img{
 }
 
 /*  -----HEADER-----  */
+.bloc_hd_1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+}
 [class^="bloc_hd__"]{
     display: none;
 }
+.logo_img{
+    padding: 10px 0;
+}
+.logo_txt{
+    text-align: center;
+    line-height: 0.8;
+    padding: 0 0 10px 0;
+}
+.txt_nom{
+    font-size: 3.5rem;
+}
+.txt_fonction{
+    font-size: 1.5rem;
+}
 
 /*  -----SECTION-----  */
+section{
+    display: flex;
+}
 .bloc_pg_1_A{
     display: none;
 }
@@ -73,7 +105,7 @@ nav img{
 
     /*  -----NAV-----  */
     nav img{
-        top: -30px;
+        top: -31px;
         transition-property: top;
         transition-duration: 0.5s;
         transition-timing-function: linear;
@@ -86,13 +118,76 @@ nav img{
     header{
         display: flex;
         flex-wrap: wrap;
+        align-items: stretch;
     }
+
+    [class^="bloc_hd"]{
+    }
+
     .bloc_hd_1{
         flex: 2 1 60%;
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
     [class^="bloc_hd__"]{
-        display: block;
+        display: block; /* Visible */
         flex: 1 2 30%;
+    }
+    header a{
+        text-decoration: none;
+    }
+    .hd_lien_haut{
+        background-color: #FFF;
+        color: black;
+        font-size: 1.3rem;
+        padding: 5px 10px;
+    }
+    [class^="hd_lien_centre"]{
+        text-align: center;
+    }
+    [class^="hd_lien_bas"]{
+        color: white;
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+
+    .hd_lien_centre_1{
+        background-color: #00AEEF;
+    }
+    .hd_lien_centre_2{
+        background-color: #71AA00;
+    }
+    .hd_lien_centre_3{
+        background-color: #F3A231;
+    }
+    .hd_lien_centre_4{
+        background-color: #404040;
+    }
+
+    .hd_lien_bas_1{
+        background-color: #00A1DD; 
+    }
+    .hd_lien_bas_2{
+        background-color: #659800; 
+    }
+    .hd_lien_bas_3{
+        background-color: #E19323; 
+    }
+    .hd_lien_bas_4{
+        background-color: #303030; 
+    }
+
+    .hd_lien_centre_1:hover{
+        background-color: #32D3FF;
+    }
+    .hd_lien_centre_2:hover{
+        background-color: #9ED72D;
+    }
+    .hd_lien_centre_3:hover{
+        background-color: #FFD665;
+    }
+    .hd_lien_centre_4:hover{
+        background-color: #6E6E6E;
     }
 
     /*  -----SECTION-----  */
@@ -109,6 +204,7 @@ nav img{
         max-width: 1160px;
         margin: auto;
     }
+    
     /* SECTION */
     .sec_img{
     display: block;
@@ -126,6 +222,14 @@ nav img{
 
 /*  -----HEADER-----  */
 
+    .bloc_hd_1{
+        flex: 2 1 30%;
+        box-sizing: border-box;
+    }
+    [class^="bloc_hd__"]{
+        flex: 1 2 15%;
+        box-sizing: border-box;
+    }
 /*  -----SECTION-----  */
 .bloc_pg_1_A{
     display: block;

@@ -31,10 +31,58 @@ HILLEWAERT Daniel
             </nav>
 
             <header>
-		<div class="bloc_hd_1"><div class="_end">LOGO et John - bloc_hd_1</div></div>
-		<div class="bloc_hd__2"><div class="_end">A propos - bloc_hd_2</div></div>
-		<div class="bloc_hd__3"><div class="_end">Portfolio - bloc_hd_3</div></div>
-		<div class="bloc_hd__4"><div class="_end">CV</div></div>
-		<div class="bloc_hd__5"><div class="_end">Contacts</div></div>
+
+		<div class="bloc_hd_1">
+		    <div class="logo_img"><img src="img/logoA.png" alt="logo" /></div>
+		    <div class="logo_txt">
+			<div class="txt_nom">John Doe</div>
+			<div class="txt_fonction">Architecte-Urbaniste</div>
+		    </div>
+		</div>
+
+		<div class="bloc_hd__2">
+		    <a href="page_1.php">
+			<div class="hd_lien_haut">A PROPOS</div>
+			<div class="hd_lien_centre_1">
+			    <img src="img/about.png" alt="A propos" />
+			</div>
+			<div class="hd_lien_bas_1">De moi</div>
+		    </a>
+		</div>
+
+		<div class="bloc_hd__3">
+		    <a href="page_2.php">
+			<div class="hd_lien_haut">PORTFOLIO</div>
+			<div class="hd_lien_centre_2">
+			    <img src="img/portfolio.png" alt="Portfolio" />
+			</div>
+			<div class="hd_lien_bas_2">Mes Travaux</div>
+		    </a>
+		</div>
+	
+		<div class="bloc_hd__4">
+		    <a href="page_3.php">
+			<div class="hd_lien_haut">CV</div>
+			<div class="hd_lien_centre_3">
+			    <img src="img/resume.png" alt="CV" />
+			</div>
+			<div class="hd_lien_bas_3">Mon profil</div>
+		    </a>
+		</div>
+		
+		<div class="bloc_hd__5">
+		    <a href="page_4.php">
+			<div class="hd_lien_haut">CONTACTS</div>
+			<div class="hd_lien_centre_4">
+			    <img src="img/contacts.png" alt="Contacts" />
+			</div>
+			<div class="hd_lien_bas_4">Contactez-moi</div>
+		    </a>
+		</div>
+
             </header>
             <section>
+		
+		
+		
+		<div class="test_background">BLABAL BLA BLA</div>
