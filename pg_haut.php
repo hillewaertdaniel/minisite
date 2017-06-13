@@ -83,6 +83,3 @@ HILLEWAERT Daniel
             </header>
             <section>
 		
-		
-		
-		<div class="test_background">BLABAL BLA BLA</div>

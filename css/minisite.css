@@ -4,14 +4,14 @@ JUIN 2017
 HILLEWAERT Daniel
 */
 
-.test_background{
+/*.test_background{
     margin: 100px;
     padding: 100px;
     background-color: #FFF;
     border: 20px solid rgba(255, 255, 255, 0.3);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-}
+}*/
 
 /*  -----BALISES GENERALES-----  */
 nav_meanmenu{
@@ -19,9 +19,8 @@ nav_meanmenu{
 }
 
 ._end{                           /* A supprimer */
-    background-color: #94DFFA;
+    background-color: #E4DFFA;
     padding: 10px;
-    /*margin: 5px;*/
 }
 
 html{
@@ -39,7 +38,7 @@ body{
 }
 
 [class^="bloc"]{
-    margin: 5px;
+    margin: 5px 0;
 }
 
 /*  -----NAV-----  */
@@ -86,15 +85,68 @@ nav img{
 /*  -----SECTION-----  */
 section{
     display: flex;
+    flex-wrap: wrap;
 }
-.bloc_pg_1_A{
-    display: none;
+[class^="bloc_pg"]{
+    width: 100%;
 }
 
+/*  -----SECTION PAGE 1-----  */
+.bloc_pg_1_A{
+    display: none;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.bloc_pg_1_A img{
+    max-width: 100%;
+}
+.bloc_pg_1_B{
+    color: white;
+    background-color: #00AEEF;
+}
+/*   H1 pour le referencement   */
+.bloc_pg_1_B h1{
+    margin: 0;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: lighter;
+    background-color: #20BFFA;
+}
+.texte_bloc_pg_1_B{
+    padding: 5px 10px;
+}
+.bloc_pg_1_C{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: space-between;
+}
+.infos_bloc_pg_1_C{
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #F0BFFA;
+}
+.infos_suite_bloc_pg_1_C{
+    font-size: 1.3rem;
+    color: #FFF;
+    background-color: #00AEEF;
+    width: 100%;
+    margin-top: 10px;
+}
+.infos_suite_bloc_pg_1_C:first-child{
+    margin-top: 0;
+}
+.infos_suite_bloc_pg_1_C:hover{
+    background-color: #20BFFA;
+}
+/*  -----FIN SECTION PAGE 1-----  */
 
 
 /*  --===--  Ecran TABLETTE --===--  */
-@media only screen and (min-width: 500px ){
+@media only screen and (min-width: 650px ){
 
     /*  -----MeanMenu-----  */
     body main article ul{
@@ -102,6 +154,9 @@ section{
     }
 
     /*  -----BALISES GENERALES-----  */
+    [class^="bloc"]{
+        margin: 5px 0.75%;
+    }
 
     /*  -----NAV-----  */
     nav img{
@@ -125,13 +180,13 @@ section{
     }
 
     .bloc_hd_1{
-        flex: 2 1 60%;
+        flex: 2 1 64%;
         flex-wrap: nowrap;
         flex-direction: row;
     }
     [class^="bloc_hd__"]{
         display: block; /* Visible */
-        flex: 1 2 30%;
+        flex: 1 2 31%;
     }
     header a{
         text-decoration: none;
@@ -191,15 +246,33 @@ section{
     }
 
     /*  -----SECTION-----  */
+    [class^="bloc_pg"]{
+        flex-grow: 1;
+    }
+    [class^="bloc_pg_1"]{
+        width: 40%;
+    }
+    [class^="bloc_pg_2"]{
+        width: 40%;
+    }
+    [class^="bloc_pg_3"]{
+        width: 100%;
+    }
+    [class^="bloc_pg_4"]{
+        width: 100%;
+    }
 
 }
 
 /*  --===--  Ecran BUREAU --===--  */
-@media only screen and (min-width: 900px ){
+@media only screen and (min-width: 1000px ){
 
-/*  -----BALISES GENERALES-----  */
+    /*  -----BALISES GENERALES-----  */
+    [class^="bloc"]{
+        margin: 5px 0.5%;
+    }
 
-/*  -----MAIN-----  */
+    /*  -----MAIN-----  */
     main{
         max-width: 1160px;
         margin: auto;
@@ -210,7 +283,7 @@ section{
     display: block;
     }
 
-/*  -----NAV-----  */
+    /*  -----NAV-----  */
     nav img{
         transition-property: top;
         transition-duration: 0.5s;
@@ -220,7 +293,7 @@ section{
         top: 0;
     }
 
-/*  -----HEADER-----  */
+    /*  -----HEADER-----  */
 
     .bloc_hd_1{
         flex: 2 1 30%;
@@ -230,9 +303,33 @@ section{
         flex: 1 2 15%;
         box-sizing: border-box;
     }
-/*  -----SECTION-----  */
-.bloc_pg_1_A{
-    display: block;
-}
+
+    /*  -----SECTION-----  */
+    .bloc_pg_1_A{
+        display: block;
+    }
+    [class^="bloc_pg_1"]{
+        width: 30%;
+    }
+    [class^="bloc_pg_2"]{
+        width: 30%;
+    }
+
+    [class^="bloc_pg_3_A"]{
+        width: 62%;
+    }
+    [class^="bloc_pg_3_B"]{
+        width: 29%;
+    }
+
+    [class^="bloc_pg_4_A"]{
+        width: 90%;
+    }
+    [class^="bloc_pg_4_B"]{
+        width: 30%;
+    }
+    [class^="bloc_pg_4_C"]{
+        width: 60%;
+    }
 
 }
