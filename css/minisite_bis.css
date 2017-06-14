@@ -4,11 +4,16 @@ JUIN 2017
 HILLEWAERT Daniel
 */
 
-/*  -----BALISES GENERALES-----  */
-/**{
-    outline: 1px #F9F2F5 solid;
+/*.test_background{
+    margin: 100px;
+    padding: 100px;
+    background-color: #FFF;
+    border: 20px solid rgba(255, 255, 255, 0.3);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
 }*/
 
+/*  -----BALISES GENERALES-----  */
 nav_meanmenu{
     display: none;
 }
@@ -27,15 +32,13 @@ body{
     color: #323232;
     font-family: Helvetica, Verdana, sans-serif;
     background-image: url("../img/bcg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: 100% auto;
     background-color: #607472;
     padding: 10px;
 }
 
 [class^="bloc"]{
-    margin: 5px 0;
+    margin: 5px 2%;
 }
 
 /*  -----NAV-----  */
@@ -121,10 +124,10 @@ section{
 }
 .infos_bloc_pg_1_C{
     display: inline-block;
-    padding: 15px 8px;
+    padding: 10px;
     font-size: 1.4rem;
     font-weight: bold;
-    background-color: #20BFFA;
+    background-color: #F0BFFA;
 }
 .infos_suite_bloc_pg_1_C{
     font-size: 1.3rem;
@@ -141,82 +144,6 @@ section{
 }
 /*  -----FIN SECTION PAGE 1-----  */
 
-/*  -----SECTION PAGE 2-----  */
-[class^="bloc_pg_2"]{
-    height: 200px;
-    background-size: 100%;
-    overflow: hidden;
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
-[class^="bloc_pg_2"] a:link{
-    color: #fff;
-}
-[class^="bloc_pg_2"] a:visited{
-    color: yellow;
-}
-.bloc_pg_2_A{
-    background-image: url(../img/our-1.jpg);
-}
-.bloc_pg_2_B{
-    background-image: url(../img/our-2.jpg);
-}
-.bloc_pg_2_C{
-    background-image: url(../img/our-3.jpg);
-}
-.bloc_pg_2_D{
-    background-image: url(../img/our-4.jpg);
-}
-.bloc_pg_2_E{
-    background-image: url(../img/our-5.jpg);
-}
-.bloc_pg_2_F{
-    background-image: url(../img/our-7.jpg);
-}
-[class^="titre_bloc_pg_2"]{
-    padding: 5px;
-    font-size: 1.9rem;
-    background-color: #64C300;
-    color: #fff;
-    line-height: 27px;
-    height: 30px;
-}
-[class^="texte_bloc_pg_2"]{
-    padding: 5px;
-    font-size: 1.6rem;
-    background-color: rgba(100, 195, 10, 0.6);
-    color: #fff;
-    padding-bottom: 150px;
-}
-[class^="transition_bloc_pg_2"]{
-    padding-top: 160px;
-    position: absolute;
-    top: 0;
-    transition-property: top;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-}
-.transition_bloc_pg_2_A:hover{
-    top: -160px;
-}
-.transition_bloc_pg_2_B:hover{
-    top: -160px;
-}
-.transition_bloc_pg_2_C:hover{
-    top: -160px;
-}
-.transition_bloc_pg_2_D:hover{
-    top: -160px;
-}
-.transition_bloc_pg_2_E:hover{
-    top: -160px;
-}
-.transition_bloc_pg_2_F:hover{
-    top: -160px;
-}
-/*  -----FIN SECTION PAGE 2-----  */
-
 
 /*  --===--  Ecran TABLETTE --===--  */
 @media only screen and (min-width: 650px ){
@@ -228,8 +155,7 @@ section{
 
     /*  -----BALISES GENERALES-----  */
     [class^="bloc"]{
-        margin: 5px 0.75%;
-        box-sizing:border-box;    
+        margin: 5px 2%;
     }
 
     /*  -----NAV-----  */
@@ -254,13 +180,15 @@ section{
     }
 
     .bloc_hd_1{
-        flex: 2 1 64%;
+        /*flex: 2 1 64%;*/
+        flex-basis: 61%;
         flex-wrap: nowrap;
         flex-direction: row;
     }
     [class^="bloc_hd__"]{
         display: block; /* Visible */
-        flex: 1 2 31%;
+        /*flex: 1 2 31%;*/
+        flex-basis: 30.5%;
     }
     header a{
         text-decoration: none;
@@ -342,15 +270,15 @@ section{
 @media only screen and (min-width: 1000px ){
 
     /*  -----BALISES GENERALES-----  */
+    [class^="bloc"]{
+        margin: 5px 2%;
+    }
+
     /*  -----MAIN-----  */
     main{
         max-width: 1160px;
         margin: auto;
     }
-    [class^="bloc"]{
-        margin: 5px 0.5%;
-    }
-
     
     /* SECTION */
     .sec_img{
@@ -370,11 +298,13 @@ section{
     /*  -----HEADER-----  */
 
     .bloc_hd_1{
-        flex: 2 1 30%;
+        /*flex: 2 1 30%;*/
+        flex-basis: 31.5%;
         box-sizing: border-box;
     }
     [class^="bloc_hd__"]{
-        flex: 1 2 15%;
+        /*flex: 1 2 15%;*/
+        flex-basis: 15.5%;
         box-sizing: border-box;
     }
 
