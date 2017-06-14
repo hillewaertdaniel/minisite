@@ -5,17 +5,9 @@ HILLEWAERT Daniel
 */
 
 /*  -----BALISES GENERALES-----  */
-/**{
-    outline: 1px #F9F2F5 solid;
-}*/
 
 nav_meanmenu{
     display: none;
-}
-
-._end{                           /* A supprimer */
-    background-color: #E4DFFA;
-    padding: 10px;
 }
 
 html{
@@ -29,11 +21,15 @@ body{
     background-image: url("../img/bcg.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     background-color: #607472;
     padding: 10px;
 }
 
+.clr{
+    clear: both;
+}
 [class^="bloc"]{
     margin: 5px 0;
 }
@@ -216,6 +212,47 @@ section{
     top: -160px;
 }
 /*  -----FIN SECTION PAGE 2-----  */
+
+/*  -----SECTION PAGE 3-----  */
+[class^="bloc_pg_3"]{
+    background-color: #E19323;
+}
+[class^="titre_bloc_pg_3"]{
+    background-color: #F3A231;
+    font-size: 2.2rem;
+    color: white;
+    padding: 10px;
+}
+.experience_bloc_pg_3_A{
+    color: #fff;
+    padding: 10px;
+}
+.experience_bloc_pg_3_A p{
+    margin: 5px;
+}
+.job_bloc_pg_3_A{
+    padding-bottom: 15px;
+}
+.img_bloc_pg_3_A{
+    float: left;
+}
+.date_bloc_pg_3_A{
+    padding: 7px;
+    margin: 10px;
+    background-color: #fff;
+    float: right;
+    color: #000;
+}
+.nom_bloc_pg_3_A{
+    float: left;
+    padding: 0 8px;
+}
+/*  -----FIN SECTION PAGE 3-----  */
+
+/*  -----SECTION PAGE 4-----  */
+[class^="bloc_pg_4"]{
+}
+/*  -----FIN SECTION PAGE 4-----  */
 
 
 /*  --===--  Ecran TABLETTE --===--  */
