@@ -214,8 +214,11 @@ section{
 /*  -----FIN SECTION PAGE 2-----  */
 
 /*  -----SECTION PAGE 3-----  */
-[class^="bloc_pg_3"]{
+.bloc_pg_3_A{
     background-color: #E19323;
+}
+.bloc_pg_3_B{
+    background-color: #F3A231;
 }
 [class^="titre_bloc_pg_3"]{
     background-color: #F3A231;
@@ -246,6 +249,44 @@ section{
 .nom_bloc_pg_3_A{
     float: left;
     padding: 0 8px;
+}
+.logiciel_fond_bloc_pg_3_B{
+    background-color: #E19323;
+    margin: 15px 10px;
+}
+.logiciel_bloc_pg_3_B{
+    float: left;
+}
+.pourcentage_bloc_pg_3_B{
+    float: right;
+}
+
+[class^="logiciel_bloc"]{
+padding: 15px 5px;
+font-size: 1.6rem;
+}
+[class^="prctg_bloc"]{
+padding: 15px 5px;
+font-size: 1.6rem;
+float: right;
+}
+[class^="pct_"]{
+    background-color: #fff;
+}
+.pct_autocad_fond_bloc_pg_3_B{
+    width: 100%;
+}
+.pct_photoshop_fond_bloc_pg_3_B{
+    width: 90%;
+}
+.pct_java_fond_bloc_pg_3_B{
+    width: 80%;
+}
+.pct_bureautique_fond_bloc_pg_3_B{
+    width: 50%;
+}
+.pct_Google_SketchUp_fond_bloc_pg_3_B{
+    width: 75%;
 }
 /*  -----FIN SECTION PAGE 3-----  */
 
