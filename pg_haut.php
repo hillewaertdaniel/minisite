@@ -59,7 +59,7 @@ HILLEWAERT Daniel
 			<div class="hd_lien_bas_2">Mes Travaux</div>
 		    </a>
 		</div>
-	
+
 		<div class="bloc_hd__4">
 		    <a href="page_3.php">
 			<div class="hd_lien_haut">CV</div>
@@ -69,7 +69,7 @@ HILLEWAERT Daniel
 			<div class="hd_lien_bas_3">Mon profil</div>
 		    </a>
 		</div>
-		
+
 		<div class="bloc_hd__5">
 		    <a href="page_4.php">
 			<div class="hd_lien_haut">CONTACTS</div>
@@ -82,4 +82,4 @@ HILLEWAERT Daniel
 
             </header>
             <section>
-		
+

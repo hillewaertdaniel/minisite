@@ -139,7 +139,7 @@ section{
 
 /*  -----SECTION PAGE 2-----  */
 [class^="bloc_pg_2"]{
-    height: 200px;
+    height: 180px;
     background-size: 100%;
     overflow: hidden;
     position: relative;
@@ -186,7 +186,7 @@ section{
     padding-bottom: 150px;
 }
 [class^="transition_bloc_pg_2"]{
-    padding-top: 160px;
+    padding-top: 140px;
     position: absolute;
     top: 0;
     transition-property: top;
@@ -194,22 +194,22 @@ section{
     transition-timing-function: linear;
 }
 .transition_bloc_pg_2_A:hover{
-    top: -160px;
+    top: -140px;
 }
 .transition_bloc_pg_2_B:hover{
-    top: -160px;
+    top: -140px;
 }
 .transition_bloc_pg_2_C:hover{
-    top: -160px;
+    top: -140px;
 }
 .transition_bloc_pg_2_D:hover{
-    top: -160px;
+    top: -140px;
 }
 .transition_bloc_pg_2_E:hover{
-    top: -160px;
+    top: -140px;
 }
 .transition_bloc_pg_2_F:hover{
-    top: -160px;
+    top: -140px;
 }
 /*  -----FIN SECTION PAGE 2-----  */
 
@@ -292,7 +292,36 @@ float: right;
 
 /*  -----SECTION PAGE 4-----  */
 [class^="bloc_pg_4"]{
+    color: #fff;
+    background-color: #404040;
+    padding: 10px;
 }
+[class^="titre_bloc_pg_4"]{
+    background-color: #666;
+    font-size: 2.2rem;
+    color: white;
+    padding: 10px;
+}
+bloc_pg_4_A{
+    padding: 3px 3px 0 3px;
+}
+.nom_champ_bloc_pg_4{
+    padding: 15px 5px 5px 10px;
+    font-weight: bold;
+}
+.champ_bloc_pg_4_B{
+    padding: 5px 5px 5px 10px;
+}
+.bouton_bloc_pg_4{
+    line-height: 30px;
+    padding: 2px 2px 4px 2px ;
+    font-weight: bold;
+    background-color: #777;
+}
+.bouton_bloc_pg_4:hover{
+    background-color: #eee;
+}
+
 /*  -----FIN SECTION PAGE 4-----  */
 
 
@@ -402,10 +431,10 @@ float: right;
         flex-grow: 1;
     }
     [class^="bloc_pg_1"]{
-        width: 40%;
+        width: 48%;
     }
     [class^="bloc_pg_2"]{
-        width: 40%;
+        width: 48%;
     }
     [class^="bloc_pg_3"]{
         width: 100%;
@@ -429,12 +458,6 @@ float: right;
         margin: 5px 0.5%;
     }
 
-    
-    /* SECTION */
-    .sec_img{
-    display: block;
-    }
-
     /*  -----NAV-----  */
     nav img{
         transition-property: top;
@@ -448,11 +471,11 @@ float: right;
     /*  -----HEADER-----  */
 
     .bloc_hd_1{
-        flex: 2 1 30%;
+        flex: 2 1 0;
         box-sizing: border-box;
     }
     [class^="bloc_hd__"]{
-        flex: 1 2 15%;
+        flex: 1 2 0;
         box-sizing: border-box;
     }
 
@@ -461,7 +484,7 @@ float: right;
         display: block;
     }
     [class^="bloc_pg_1"]{
-        width: 30%;
+        flex: 1 1 32.33%;
     }
     [class^="bloc_pg_2"]{
         width: 30%;
