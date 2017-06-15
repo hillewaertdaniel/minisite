@@ -10,18 +10,18 @@ HILLEWAERT Daniel
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/minisite.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" href="meanmenu.min.css" media="all" />
+	<link rel="stylesheet" href="css/meanmenu.min.css" media="all" />
     </head>
     <body>
         <main>
-	    <article>
+	    <aside>
 		<ul>
 		    <li><a href="page_1.php">A PROPOS</a></li>
 		    <li><a href="page_2.php">PORTFOLIO</a></li>
 		    <li><a href="page_3.php">CV</a></li>
 		    <li><a href="page_4.php">CONTACTS</a></li>
 		</ul>
-	    </article>
+	    </aside>
 
             <nav>
 		<div class="nav"><a href="http://www.isl.be/"><img src="img/facebook.png" alt="facebook" /></a></div>

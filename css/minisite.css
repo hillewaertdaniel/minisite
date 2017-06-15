@@ -330,7 +330,7 @@ bloc_pg_4_A{
 @media only screen and (min-width: 650px ){
 
     /*  -----MeanMenu-----  */
-    body main article ul{
+    body main aside ul{
         display: none;
     }
 
