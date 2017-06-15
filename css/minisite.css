@@ -192,6 +192,7 @@ section{
     transition-property: top;
     transition-duration: 0.5s;
     transition-timing-function: linear;
+    width: 100%;
 }
 .transition_bloc_pg_2_A:hover{
     top: -140px;

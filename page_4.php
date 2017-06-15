@@ -41,7 +41,7 @@ include("pg_haut.php");
 <div class="bloc_pg_4_C">
     <div class="titre_bloc_pg_4_C">Contactez - moi !</div>
 
-    <form name="me_contacter" action="page_1.php" method="POST">
+    <form name="me_contacter" action="page_4.php" method="POST">
 	<div class="nom_champ_bloc_pg_4">
 	    <label for="nom">Votre Non:</label>
 	</div>

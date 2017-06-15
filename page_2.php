@@ -51,7 +51,7 @@ include("pg_haut.php");
     <div class="transition_bloc_pg_2_F">
 	<div class="titre_bloc_pg_2_F">Rénovation</div>
 	<div class="texte_bloc_pg_2_F">
-	    L’intervention se situe au centre-ville en intérieur d’ilot, à l’arrière d’une maison .Un ancien atelier s’est effondré, ne laissant que les murs et la dalle de cave. Les travaux consistent à reconstruire un logement de 4 chambres<br>
+	    L’intervention se situe au centre-ville en intérieur d’ilot, à l’arrière d’une maison .Un ancien atelier s’est effondré, ne laissant que les murs et la dalle de cave. Les travaux consistent à reconstruire un logement de 4 chambres.<br>
 	    <a href="#">A découvrir</a>
 	</div>	    
     </div>
